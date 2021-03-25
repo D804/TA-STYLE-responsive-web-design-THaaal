@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*My reset*/
+*,
+*::before,*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5;
+
+}
+/*General*/
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.center{
+   text-align: center;
+}
+.padding{
+    padding: 2rem 0;
+}
+.btn{
+    display: inline-block;
+   
+   
+    background-color: #37B667;
+    color: white;
+    border-radius: 0.4rem;
+    margin: 2rem 0;
+}
+.primary-btn{
+    font-size: 1.3rem;
+    padding: 1rem 3rem;
+    
+}
+.secondary-btn{
+    font-size: 1.2rem;
+    padding: 0.6rem 2rem;
+}
+.direction{
+    flex-direction: row-reverse;
+}
+
+/*flex*/
+
+/*Header*/
+.header{
+background-color: #222946;
+
+}
+.nav li {
+ font-size: 1.3rem;
+ text-transform: uppercase;
+ font-weight: 700;
+ padding: 1.2rem;
+ display: inline-block;
+ 
+}
+.nav li a{
+    color: white;
+}
+ nav li .active{
+    color: #37B667;
+}
+/*Article*/
+.article{
+    background-color: #E9ECFC;
+}
+.img-width{
+    width: 100%;
+    
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #020511;
+    text-transform: capitalize;
+}
+/*Blog*/
+h3{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 1.6rem 0;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+}
+p{
+    font-size: 1.2rem;
+    color: #ACADAF;
+}
+.para{
+    font-size: 1rem;
+}
+/*footer*/
+.footer{
+    background-color: #222946;
+    color: #B7BBCD;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+}
+.icon i{
+    font-size: 2rem;
+    margin: 1.5rem ;
+}
+/*Desktop View*/
+@media screen and (min-width:768px){
+    html{
+        font-size: 16px;
+    }
+    /*flex*/
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .alignment{
+        align-items: flex-start;
+    }
+    .flex-48{
+        flex: 0 1 48%;
+    }
+    .flex-30{
+        flex: 0 1 32%;
+    }
+}
