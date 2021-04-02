@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*My reset*/
+*,
+*::before,*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+
+}
+html{
+    font-size: 16px;
+}
+/*General*/
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.center{
+   text-align: center;
+}
+.padding{
+    padding: 3rem 0;
+}
+.align{
+  align-items: flex-start;
+}
+.align-center{
+    align-items: center;
+}
+.padding-bottom{
+    padding-bottom: 2rem;
+}
+/*Flex*/
+.flex{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.flex-46{
+    flex: 0 1 46%;
+    
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-10{
+    flex: 0 1 10%;
+}
+.flex-55{
+    flex: 0 1 55%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-31{
+    flex: 0 1 32%;
+}
+.flex-20{
+    flex: 0 1 20%;
+   
+}
+
+.width-full{
+    width: 100%;
+
+}
+.btn{
+    display: inline-block;
+    padding: 0.4rem 1.7rem;
+    background-color: #F9234D;
+    color: white;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+   
+}
+.primary-btn{
+    padding: 1rem 1.8rem;
+}
+.font-0{
+    font-size: 0;
+}
+.para{
+    font-size: 1.4rem;
+   
+    font-weight: 600;
+   
+}
+.primary{
+    color: #6A6970;
+}
+/*Header*/
+.header{
+ background: linear-gradient(rgba(93, 93, 231,0.8),rgba(93, 93, 231,0.8)),url(../media/banner.png)  no-repeat;
+   background-size: cover;
+   height: 115vh;
+   position: relative;
+   color: white;
+ 
+  
+    
+}
+.brand{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+.header li a{
+    color: white;
+    margin-right: 1.5rem;
+   
+    font-weight: 500;
+}
+.nav{
+    font-size: 1.6rem;
+}
+/*hero*/
+.hero{
+    position: absolute;
+    top: 4rem;
+    margin-top: 5rem;
+    left: 3.4rem;
+    color: white;
+} 
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+   /* padding-bottom: 2rem ;*/
+   
+}
+.hero strong{
+    color: #F9234D;
+}
+
+
+.hero img{
+    max-height:500px;
+    background-size: cover;
+}
+/*About*/
+.about-heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: 2rem ;
+}
+/*Join*/
+.join{
+    background-color: #DFECFF;
+}
+h3{
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: 700;  
+    text-align: center;
+    /*padding-bottom: 2rem ;*/
+}
+.join-para{
+    font-size: 1.2rem;
+   
+    font-weight: 600;
+   
+}
+
+.border{
+    border: 2px dashed red;
+}
+h4{
+    font-size: 2rem;
+    font-weight: 800;
+}
+/*Schedule*/
+.schedule h5{
+   padding-top: 1.2rem;
+}
+.schedule-date{
+    height: 9.5rem;
+    width: 9.5rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px dashed #F9234D;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F9234D;
+    margin-bottom: 3rem;
+}
+ .schedule-date:hover{
+    background-color: #F9234D;
+    color: white;
+}
+
+.schedule img{
+    border-radius: 0.4rem;
+}
+.schedule-bottom{
+    padding: 1rem 0 2.5rem 0;
+}
+/*Activity*/
+.activity{
+    background-color:#DFECFF;
+    
+}
+.activity img{
+    height: 4rem;
+    width: 4rem;
+    
+}
+.activity strong{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.activity h5{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.idea{
+    background-color: #F9234D;
+    border-radius: 0.4rem;
+   
+}
+.activity-icon{
+    padding: 2.5rem 0;
+}
+/*video*/
+.embeded{
+    background: url(../media/banner.png)  no-repeat;
+    height: 100vh;
+    border-radius: 1.2rem;
+    
+}
+.media-button{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+   
+  
+}
+.media-button i{
+    font-size: 2rem;
+    color: #F9234D;
+    line-height: 8rem;
+    
+}
+/*News*/
+.news{
+    background-color:#DFECFF;
+}
+h6{
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 1rem 0;
+}
+.news-para{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.news a{
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+   
+}
+.news .news-info{
+    color: #F9234D;
+}
+.news a:hover{
+    color: #F9234D;
+}
+/*Footer*/
+.foot{
+    background-color: #23347B;
+   
+}
+.foot strong{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+   
+   
+}
+.foot a{
+    font-size: 1.1rem;
+    color: #BCC0D2;
+    margin-right: 1rem;
+    padding-top: 2rem;
+}
+.foot i{
+    font-size:1.8rem;
+    border-radius: 1rem;
+    color: #BCC0D2;
+    margin-right: 2.6rem;
+    padding-top: 2rem;
+}
+.copyright{
+    background-color: #102169;
+    padding: 1.5rem 0;
+}
+.foot small{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #9498AB;
+   
+    
+}
